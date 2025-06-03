@@ -1,11 +1,16 @@
 import React from "react";
+import Header from "@/components/layout/Header";
 
-function home() {
+const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Home page</h1>
-    </div>
+    <>
+      <Header />
+      <main className="p-6">
+        <h1 className="text-2xl font-bold">Home Page</h1>
+        <p>Welcome to the Home Page of the ALX Project.</p>
+      </main>
+    </>
   );
-}
+};
 
-export default home;
+export default HomePage;
